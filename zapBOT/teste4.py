@@ -5,25 +5,29 @@ from tkinter import ttk
 
 
 
-def EnviarMSG():
+def EnviarMSG(event):
     try:
         num = inputnum.get("1.0", END)
-        msgzz = inputmsg.get("1.0", END)
-        pk.sendwhatmsg_instantly(f"{num}", msgzz)
-        status.config(text="Status: Mensagem Enviada!")
-
+        if inputmsg.get("1.0", END) == "":
+            brabo = int(listbox.curselection()[0])
+            msgzz = listbox.get(brabo)
+            pk.sendwhatmsg_instantly(f"{num}", msgzz)
+            status.config(text="Status: Mensagem Enviada!")
+        else:
+            msgzz = inputmsg.get("1.0", END)
+            pk.sendwhatmsg_instantly(f"{num}", msgzz)
+            status.config(text="Status: Mensagem Enviada!")
     except:
         status.config(text="Status: Erro no Envio! verifique o número.")
 
-def selecmsg(event):
+'''def selecmsg(event):
     try:
-        num = inputnum.get("1.0", END)
-        msgzz = selmsg.get()
-        pk.sendwhatmsg_instantly(f"{num}", msgzz)
-        status.config(text="Status: Mensagem Enviada!")
+        brabo = int(listbox.curselection()[0])
+        monk = listbox.get(brabo)
+        print(monk)
 
     except:
-        status.config(text="Status: Erro no Envio! verifique o número.")
+        status.config(text="Status: Erro no Envio! verifique o número.")'''
 
 
 # Mensagens
@@ -44,15 +48,15 @@ inputnum.grid(column=0, row=1, padx=10, pady=10)
 msg = Label(janela, text="Insira a mensagem que deseja enviar:")
 msg.grid(column=0, row=2, padx=10, pady=10)
 
-inputmsg = Text(janela, height=3, width=40)
+inputmsg = Text(janela, height=5, width=40)
 inputmsg.grid(column=0, row=3, padx=10, pady=10)
 
-selmsg = StringVar()
-combox = ttk.Combobox(janela, textvariable=selmsg)
-combox["values"] = [msg1, msg2, msg3]
-combox["state"] = "readonly"
-combox.grid(column=2, row=3, padx=10, pady=10)
-combox.bind("<<ComboboxSelected>>", selecmsg)
+listbox = Listbox(janela, height=5)
+listbox.insert(END, msg1)
+listbox.insert(END, msg2)
+listbox.insert(END, msg3)
+listbox.grid(column=1, row=3, padx=10, pady=10)
+listbox.bind("<<ListboxSelect>>", EnviarMSG)
 
 status = Label(janela, text="Status:")
 status.grid(column=0,row=4, padx=10, pady=10)
@@ -61,7 +65,7 @@ Enviar = Button(janela, text="Enviar", command=EnviarMSG)
 Enviar.grid(column=0, row=5, padx=10, pady=10)
 
 sair = Button(janela, text="Sair", command=janela.destroy)
-sair.grid(column=0, row=6, padx=10, pady=10)
+sair.grid(column=1, row=5, padx=10, pady=10)
 
 
 janela.mainloop()
