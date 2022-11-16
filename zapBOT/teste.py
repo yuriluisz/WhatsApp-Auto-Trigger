@@ -1,41 +1,32 @@
-import tkinter as tk
-from tkinter import ttk
-from tkinter.messagebox import showinfo
-from calendar import month_name
+from tkinter import *
+from tkinter.ttk import*
 
-root = tk.Tk()
-
-# config the root window
-root.geometry('300x200')
-root.resizable(False, False)
-root.title('Combobox Widget')
-
-# label
-label = ttk.Label(text="Please select a month:")
-label.pack(fill=tk.X, padx=5, pady=5)
-
-# create a combobox
-selected_month = tk.StringVar()
-month_cb = ttk.Combobox(root, textvariable=selected_month)
-
-# get first 3 letters of every month name
-month_cb['values'] = ["MSG 1", "MSG 2", "MSG 3"]
-
-# prevent typing a value
-month_cb['state'] = 'readonly'
-
-# place the widget
-month_cb.pack(fill=tk.X, padx=5, pady=5)
+janela = Tk()
+janela.title("Listbox")
+janela.geometry('300x200')
 
 
-# bind the selected value changes
-def month_changed(event):
-    """ handle the month changed event """
-    showinfo(
-        title='Result',
-        message=f'You selected {selected_month.get()}!'
-    )
+def test(Event):
+    # imprime apenas o primeiro elemento
+    index = int(lb.curselection()[0])
+    value = lb.get(index)
 
-month_cb.bind('<<ComboboxSelected>>', month_changed)
+    print(value)
 
-root.mainloop()
+
+lb = Listbox(janela, height=8)
+lb.grid(row=0, column=0)
+
+# Adicionando um elemento à listbox
+lb.insert(1, 'PHP')
+lb.insert(2, 'Python')
+lb.insert(3, 'MySQL')
+
+items = ["JS", "Java", "C++"]
+
+for i in items:
+    lb.insert(END, i)
+
+lb.bind('<<ListboxSelect>>', test)
+
+janela.mainloop()

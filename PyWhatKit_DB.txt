@@ -10,3 +10,33 @@ Phone Number: 55_6599532826
 
 Message: sai fora baitola
 --------------------
+Date: 15/11/2022
+Time: 0:59
+Phone Number: 55_65999532826
+
+Message: 
+--------------------
+Date: 15/11/2022
+Time: 1:51
+Phone Number: 55_6599532826
+Image: C:\Users\yulus\Downloads\progc\progc01.png
+Caption: 
+--------------------
+Date: 15/11/2022
+Time: 1:52
+Phone Number: 55_6599532826
+Image: C:\Users\yulus\Downloads\progc\progc01.png
+Caption: C:\Users\yulus\Downloads\progc\progc02.png
+--------------------
+Date: 15/11/2022
+Time: 20:34
+Phone Number: 55_65999532826
+
+Message: 
+--------------------
+Date: 15/11/2022
+Time: 20:36
+Phone Number: 55_65999532826
+
+Message: 
+--------------------

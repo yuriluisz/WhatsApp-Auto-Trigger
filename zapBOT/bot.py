@@ -15,9 +15,9 @@ def EnviarMSG():
     except:
         status.config(text="Status: Erro no Envio! verifique o número.")
 
-def selecmsg():
-    inputmsg = selmsg.get()
-
+def selecmsg(event):
+    num = input
+    msgzz = selmsg.get()
 
 
 # Mensagens
