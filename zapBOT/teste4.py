@@ -2,15 +2,13 @@ import pywhatkit as pk
 from tkinter import *
 from tkinter import ttk
 
-
-
-
 def EnviarMSG(event):
     try:
         num = inputnum.get("1.0", END)
         if inputmsg.get("1.0", END) == "":
             brabo = int(listbox.curselection()[0])
             msgzz = listbox.get(brabo)
+            print(msgzz)
             pk.sendwhatmsg_instantly(f"{num}", msgzz)
             status.config(text="Status: Mensagem Enviada!")
         else:
@@ -19,15 +17,6 @@ def EnviarMSG(event):
             status.config(text="Status: Mensagem Enviada!")
     except:
         status.config(text="Status: Erro no Envio! verifique o número.")
-
-'''def selecmsg(event):
-    try:
-        brabo = int(listbox.curselection()[0])
-        monk = listbox.get(brabo)
-        print(monk)
-
-    except:
-        status.config(text="Status: Erro no Envio! verifique o número.")'''
 
 
 # Mensagens

@@ -2,9 +2,6 @@ import pywhatkit as pk
 from tkinter import *
 from tkinter import ttk
 
-
-
-
 def EnviarMSG():
     try:
         num = inputnum.get("1.0", END)
