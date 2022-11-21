@@ -15,7 +15,7 @@ def msgpronta():
             num = inputnum.get("1.0", END)
             brabo = int(listbox.curselection()[0])
             msgzz = listbox.get(brabo)
-            pk.sendwhatmsg_instantly(f"{num}", msgzz)
+            pk.sendwhatmsg_instantly(f"{num}", msgzz, tab_close= True, close_time=3)
             status.config(text="Status: Mensagem Enviada!")
         except:
             status.config(text="Status: Erro no Envio! verifique o numero.")
@@ -25,28 +25,33 @@ def EnviarMSG():
     try:
         num = inputnum.get("1.0", END)
         msgzz = inputmsg.get("1.0", END)
-        pk.sendwhatmsg_instantly(f"{num}", msgzz)
+        pk.sendwhatmsg_instantly(f"{num}", msgzz, tab_close= True, close_time=3)
         status.config(text="Status: Mensagem Enviada!")
     except:
         status.config(text="Status: Erro no Envio! verifique o número.")
 
 # Def do botao de escolher imagem
 def fndimg():
-    try:
-        num = inputnum.get("1.0", END)
+    try:       
+        imge = filedialog.askopenfilename(initialdir="/", title="Selecione UMA imagem", filetypes=((".JPG","*.jpg*"),(".PNG","*.png*"),("Todos","*.*")))
+        msgs = open("zapBOT/numeros.txt")
+        numeros = msgs.readlines()
         msgzz = inputmsg.get("1.0", END)
-        imge = filedialog.askopenfilename(initialdir="/", title="Selecione UMA imagem", filetypes=(("png","*.png*"),("jpg","*jpg*"),("Todos","*.*")))
-        print(imge)
-        pk.sendwhats_image(f"{num}",imge, msgzz)
+        print(numeros)
+        for pau in numeros:
+            pk.sendwhats_image(f"{pau}", imge, msgzz, tab_close= True, close_time= 3)
+        status.config(text="Status: Erro no envio! verifique o número.")
     except:
         status.config(text="Status: Erro no Envio! verifique o número.")
+        print("gay")
+        print(imge)
+
 
 # Def do botao de Como usar?
 def hwtuse():
     showinfo(
         title="Como usar?",
-        message="Numero: Sempre que for inserir o numero coloque da seguinte maneira 55_65xxxxxxxx com um _ depois do DDD \n Imagens: Imagens precisam ter o numero já inserido, caso contrario nao sera enviada, pois o programa envia automaticamente apos escolher a imagem. Também é possivel enviar imagens com mensagens, basta escrever a mensagem e escolher a imagen (nao funciona com mensagem pronta)"
-    )
+        message="Numero: Sempre que for inserir o numero coloque da seguinte maneira 55_65xxxxxxxx com um _ depois do DDD \n Imagens: Imagens precisam ter o numero já inserido, caso contrario nao sera enviada, pois o programa envia automaticamente apos escolher a imagem. Também é possivel enviar imagens com mensagens, basta escrever a mensagem e escolher a imagen (nao funciona com mensagem pronta)")
 
 def adcmensg():
     try:
@@ -93,7 +98,7 @@ def envflwrite():
         leituranum = numtxt.readlines()
         msgzz = inputmsg.get("1.0", END)
         for env in leituranum:
-            pk.sendwhatmsg(f"{env},", msgzz)
+            pk.sendwhatmsg(f"{env},", msgzz, tab_close= True, close_time=3)
         numtxt.close()
         status.config(text="Status: Mensagem Enviada!")
     except:
@@ -106,7 +111,7 @@ def envflist():
         brabo = int(listbox.curselection()[0])
         msgzz = listbox.get(brabo)
         for env in leituranum:
-            pk.sendwhatmsg(f"{env}", msgzz)
+            pk.sendwhatmsg(f"{env}", msgzz, tab_close= True, close_time=3)
         numtxt.close()
         status.config(text="Status: Mensagem Enviada!")
     except:
@@ -184,10 +189,10 @@ adcnum.grid(column=0, row=10, padx=5, pady=5)
 excnum = Button(frame0, text="Excluir Numeros", command=excnumero, width=25)
 excnum.grid(column=0, row=11, padx=5, pady=5)
 
-envescrita = Button(frame0, text="Enviar para lista (escrita)", width=25)
+envescrita = Button(frame0, text="Enviar para lista (escrita)",command=envflwrite, width=25)
 envescrita.grid(column=0, row=5, padx=5, pady=5)
 
-envselect = Button(frame0, text="Enviar para lista (selec)", width=25)
+envselect = Button(frame0, text="Enviar para lista (selec)",command=envflist, width=25)
 envselect.grid(column=0, row=3, padx=5, pady=5)
 
 janela.mainloop()
