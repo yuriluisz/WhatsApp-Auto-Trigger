@@ -1,8 +1,8 @@
-import pywhatkit as pk
 from tkinter import *
-from tkinter import ttk
-from tkinter import filedialog
+from tkinter import filedialog, ttk
 from tkinter.messagebox import showinfo
+
+import pywhatkit as pk
 
 # Abrir o arquivos de mensagens
 msgtxt = open("zapBOT/mensagens.txt")
@@ -76,7 +76,7 @@ def excmsg():
 # Def para adicionar numero a lista
 def adcnumero():
     try:
-        numtxt = open("zapBOT/numeros.txt", "a")
+        numtxt = open("zapBOT/numeros.txtt", "a")
         lernumin = inputnum.get("1.0", END)
         numtxt.write(lernumin)
         numtxt.close()

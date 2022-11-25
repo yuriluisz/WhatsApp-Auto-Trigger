@@ -242,3 +242,15 @@ Phone Number: 55_65999532826
 
 Message: Ola, Estamos indisponiveis
 --------------------
+Date: 25/11/2022
+Time: 15:38
+Phone Number: 55_65999532826
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 25/11/2022
+Time: 15:39
+Phone Number: 55_65999532826
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
