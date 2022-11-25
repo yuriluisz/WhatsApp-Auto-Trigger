@@ -4,7 +4,7 @@ from tkinter import ttk
 from tkinter import filedialog
 from tkinter.messagebox import showinfo
 
-
+# Abrir o arquivos de mensagens
 msgtxt = open("zapBOT/mensagens.txt")
 leituramsg = msgtxt.readlines()
 
@@ -46,13 +46,13 @@ def fndimg():
         print("gay")
         print(imge)
 
-
 # Def do botao de Como usar?
 def hwtuse():
     showinfo(
         title="Como usar?",
         message="Numero: Sempre que for inserir o numero coloque da seguinte maneira 55_65xxxxxxxx com um _ depois do DDD \n Imagens: Imagens precisam ter o numero já inserido, caso contrario nao sera enviada, pois o programa envia automaticamente apos escolher a imagem. Também é possivel enviar imagens com mensagens, basta escrever a mensagem e escolher a imagen (nao funciona com mensagem pronta)")
 
+# Def para adicionar mensagens a lista
 def adcmensg():
     try:
         msgstxt = open("zapBOT/mensagens.txt", "a")
@@ -63,6 +63,7 @@ def adcmensg():
     except:
         status.config(text="Status: A mensagem não foi adicionada.")
 
+# Def para excluir mensagens da lista
 def excmsg():
     try:
         msgstxt = open("zapBOT/mensagens.txt", "w")
@@ -71,7 +72,8 @@ def excmsg():
         status.config(text="Status: Todas as mensagens da lista foram excluidas!")
     except:
         status.config(text="Status: As mensagens não foram excluidas.")
-    
+
+# Def para adicionar numero a lista
 def adcnumero():
     try:
         numtxt = open("zapBOT/numeros.txt", "a")
@@ -82,7 +84,7 @@ def adcnumero():
     except:
         status.config(text="Status: O Numero não foi Adicionado.")
 
-
+# Def para excluir numero da lista
 def excnumero():
     try:
         numtxt = open("zapBOT/numeros.txt", "w")
@@ -92,6 +94,7 @@ def excnumero():
     except:
         status.config(text="Status: Os numeros não foram excluidos")
 
+# Def para enviar mensagem escrita para lista
 def envflwrite():
     try:
         numtxt = open("zapBOT/numeros.txt")
@@ -104,6 +107,7 @@ def envflwrite():
     except:
         status.config(text="Status: Erro no Envio! verifique o número.")
 
+# Def para enviar mensagem selecionada para lista
 def envflist():
     try:
         numtxt = open("zapBOT/numeros.txt")
@@ -122,6 +126,7 @@ janela = Tk()
 janela.title("WhatsApp auto message")
 janela.resizable(False, False)
 
+# Criação de frames
 frame0 = Frame(janela)
 frame0.grid(column=0, row=0)
 
@@ -177,21 +182,27 @@ sair.grid(column=0, row=13, padx=5, pady=5)
 slcimg = Button(frame0, text="Escolher imagem", command=fndimg, width=25)
 slcimg.grid(column=0, row=6, padx=5, pady=5)
 
+# Botao para adicionar mensagem a lista
 adcmsg = Button(frame0, text="Adicionar mensagem", command=adcmensg, width=25)
 adcmsg.grid(column=0, row=7, padx=5, pady=5)
 
+# Botao para excluir todas as mensagens da lista
 delist = Button(frame0, text="Excluir mensagens", command=excmsg, width=25)
 delist.grid(column=0, row=9, padx=5, pady=5)
 
+# Botao para adicionar um numero na lista
 adcnum = Button(frame0, text="Adicionar Numero", command=adcnumero, width=25)
 adcnum.grid(column=0, row=10, padx=5, pady=5)
 
+# Botao para excluir um numero da lista
 excnum = Button(frame0, text="Excluir Numeros", command=excnumero, width=25)
 excnum.grid(column=0, row=11, padx=5, pady=5)
 
+# Botao para enviar mensagem escrita para a lista de numeros
 envescrita = Button(frame0, text="Enviar para lista (escrita)",command=envflwrite, width=25)
 envescrita.grid(column=0, row=5, padx=5, pady=5)
 
+# Botao para enviar mensagem selecionada da lista para a lista de numeros
 envselect = Button(frame0, text="Enviar para lista (selec)",command=envflist, width=25)
 envselect.grid(column=0, row=3, padx=5, pady=5)
 
