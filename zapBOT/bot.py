@@ -1,6 +1,8 @@
-import pywhatkit as pk
 from tkinter import *
 from tkinter import ttk
+
+import pywhatkit as pk
+
 
 def EnviarMSG():
     try:
