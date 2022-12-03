@@ -76,7 +76,7 @@ def excmsg():
 # Def para adicionar numero a lista
 def adcnumero():
     try:
-        numtxt = open("zapBOT/numeros.txtt", "a")
+        numtxt = open("zapBOT/numeros.txt", "a")
         lernumin = inputnum.get("1.0", END)
         numtxt.write(lernumin)
         numtxt.close()
@@ -101,7 +101,7 @@ def envflwrite():
         leituranum = numtxt.readlines()
         msgzz = inputmsg.get("1.0", END)
         for env in leituranum:
-            pk.sendwhatmsg(f"{env},", msgzz, tab_close= True, close_time=3)
+            pk.sendwhatmsg_instantly(f"{env},", msgzz, tab_close= True, close_time=3)
         numtxt.close()
         status.config(text="Status: Mensagem Enviada!")
     except:
@@ -115,7 +115,7 @@ def envflist():
         brabo = int(listbox.curselection()[0])
         msgzz = listbox.get(brabo)
         for env in leituranum:
-            pk.sendwhatmsg(f"{env}", msgzz, tab_close= True, close_time=3)
+            pk.sendwhatmsg_instantly(f"{env}", msgzz, tab_close= True, close_time=3)
         numtxt.close()
         status.config(text="Status: Mensagem Enviada!")
     except:
@@ -123,28 +123,29 @@ def envflist():
 
 # Interface
 janela = Tk()
+janela.configure(bg="#BFBFBF")
 janela.title("WhatsApp auto message")
 janela.resizable(False, False)
 
 # Criação de frames
-frame0 = Frame(janela)
+frame0 = Frame(janela, bg="#BFBFBF")
 frame0.grid(column=0, row=0)
 
-frame1 = Frame(janela)
+frame1 = Frame(janela, bg="#BFBFBF")
 frame1.grid(column=1, row=0)
 
-frame2 = Frame(janela)
+frame2 = Frame(janela, bg="#BFBFBF")
 frame2.grid(column=2, row=0)
 
 # Inserir Numero de telefone
-num = Label(frame1, text='Insira o numero de telefone:')
+num = Label(frame1, text='Insira o numero de telefone:', bg="#BFBFBF")
 num.grid(column=1, row=0, padx=1, pady=1)
 
 inputnum = Text(frame1, height=1, width=40)
 inputnum.grid(column=1, row=1, padx=5, pady=5)
 
 # Inserir Mensagem
-msg = Label(frame1, text="Insira a mensagem:")
+msg = Label(frame1, text="Insira a mensagem:", bg="#BFBFBF")
 msg.grid(column=1, row=2, padx=1, pady=1)
 
 inputmsg = Text(frame1, height=15, width=40)
@@ -159,51 +160,51 @@ for txt in leituramsg:
 listbox.grid(column=2, row=0, padx=10, pady=10)
 
 # Status do Envio
-status = Label(frame1 , text="Status:")
+status = Label(frame1 , text="Status:", bg="#BFBFBF")
 status.grid(column=1,row=4, padx=5, pady=5)
 
 # Botao Enviar mensagem pronta
-Enviarpronta = Button(frame0, text="Enviar mensagem selecionada", command=msgpronta, width=25)
+Enviarpronta = Button(frame0, text="Enviar mensagem selecionada", command=msgpronta, width=25, bg="#FFFFFF")
 Enviarpronta.grid(column=0, row=0, padx=5, pady=5)
 
 # Botao Enviar mensagem escrita
-Enviar = Button(frame0, text="Enviar mensagem escrita", command=EnviarMSG, width=25)
+Enviar = Button(frame0, text="Enviar mensagem escrita", command=EnviarMSG, width=25, bg="#FFFFFF")
 Enviar.grid(column=0, row=1, padx=5, pady=5)
 
 # Botao Como usar?
-adc = Button(frame0, text="Como usar?", command=hwtuse, width=25)
+adc = Button(frame0, text="Como usar?", command=hwtuse, width=25, bg="#FFFFFF")
 adc.grid(column=0, row=12, padx=5, pady=5)
 
 # Botao Sair
-sair = Button(frame0, text="Sair", command=janela.destroy, width=25)
+sair = Button(frame0, text="Sair", command=janela.destroy, width=25, bg="#FFFFFF")
 sair.grid(column=0, row=13, padx=5, pady=5)
 
 # Botao para escolher uma imagem
-slcimg = Button(frame0, text="Escolher imagem", command=fndimg, width=25)
+slcimg = Button(frame0, text="Escolher imagem", command=fndimg, width=25, bg="#FFFFFF")
 slcimg.grid(column=0, row=6, padx=5, pady=5)
 
 # Botao para adicionar mensagem a lista
-adcmsg = Button(frame0, text="Adicionar mensagem", command=adcmensg, width=25)
+adcmsg = Button(frame0, text="Adicionar mensagem", command=adcmensg, width=25, bg="#FFFFFF")
 adcmsg.grid(column=0, row=7, padx=5, pady=5)
 
 # Botao para excluir todas as mensagens da lista
-delist = Button(frame0, text="Excluir mensagens", command=excmsg, width=25)
+delist = Button(frame0, text="Excluir mensagens", command=excmsg, width=25, bg="#FFFFFF")
 delist.grid(column=0, row=9, padx=5, pady=5)
 
 # Botao para adicionar um numero na lista
-adcnum = Button(frame0, text="Adicionar Numero", command=adcnumero, width=25)
+adcnum = Button(frame0, text="Adicionar Numero", command=adcnumero, width=25, bg="#FFFFFF")
 adcnum.grid(column=0, row=10, padx=5, pady=5)
 
 # Botao para excluir um numero da lista
-excnum = Button(frame0, text="Excluir Numeros", command=excnumero, width=25)
+excnum = Button(frame0, text="Excluir Numeros", command=excnumero, width=25, bg="#FFFFFF")
 excnum.grid(column=0, row=11, padx=5, pady=5)
 
 # Botao para enviar mensagem escrita para a lista de numeros
-envescrita = Button(frame0, text="Enviar para lista (escrita)",command=envflwrite, width=25)
+envescrita = Button(frame0, text="Enviar para lista (escrita)",command=envflwrite, width=25, bg="#FFFFFF")
 envescrita.grid(column=0, row=5, padx=5, pady=5)
 
 # Botao para enviar mensagem selecionada da lista para a lista de numeros
-envselect = Button(frame0, text="Enviar para lista (selec)",command=envflist, width=25)
+envselect = Button(frame0, text="Enviar para lista (selec)",command=envflist, width=25, bg="#FFFFFF")
 envselect.grid(column=0, row=3, padx=5, pady=5)
 
 janela.mainloop()
