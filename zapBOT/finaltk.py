@@ -43,7 +43,6 @@ def fndimg():
         status.config(text="Status: Erro no envio! verifique o número.")
     except:
         status.config(text="Status: Erro no Envio! verifique o número.")
-        print("gay")
         print(imge)
 
 # Def do botao de Como usar?
