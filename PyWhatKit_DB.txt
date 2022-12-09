@@ -314,3 +314,345 @@ Phone Number: 55_65999532826
 ,
 Message: 
 --------------------
+Date: 8/12/2022
+Time: 13:40
+Phone Number: 55_65999532826
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 13:40
+Phone Number: 55_65992328558
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 13:42
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 13:42
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 13:54
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 13:55
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 14:4
+Phone Number: 55_65981268813
+
+Message: Olá
+--------------------
+Date: 8/12/2022
+Time: 14:4
+Phone Number: 55_65981268813
+
+Message: Olá
+--------------------
+Date: 8/12/2022
+Time: 14:42
+Phone Number: 55_65999532826
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 14:42
+Phone Number: 55_65992328558
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 15:3
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:3
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:4
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:5
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:7
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:7
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:8
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:8
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:10
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:10
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:14
+Phone Number: 55_65999532826
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 15:14
+Phone Number: 55_65992328558
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 15:16
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:17
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:21
+Phone Number: 55_65999532826
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 15:21
+Phone Number: 55_65992328558
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 15:35
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:36
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 15:57
+Phone Number: 55_65999532826
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 15:57
+Phone Number: 55_65992328558
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 16:4
+Phone Number: 55_65999532826
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 16:5
+Phone Number: 55_65992328558
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 16:14
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 16:14
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 16:25
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 16:25
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveis
+--------------------
+Date: 8/12/2022
+Time: 17:49
+Phone Number: 55_65999532826
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 17:49
+Phone Number: 55_65992328558
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 18:0
+Phone Number: +55 65 984391478
+
+Message: iai
+--------------------
+Date: 8/12/2022
+Time: 18:20
+Phone Number: 55_65999532826
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 18:20
+Phone Number: 55_65992328558
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 18:25
+Phone Number: 55_65999532826
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 18:25
+Phone Number: 55_65992328558
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 18:30
+Phone Number: 55_65999532826
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 18:30
+Phone Number: 55_65992328558
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 18:54
+Phone Number: 55_65999532826
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 18:54
+Phone Number: 55_65992328558
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 19:2
+Phone Number: 55_65999532826
+
+Message: Ola, Estamos indisponiveisyfcjhfchgvjgvjg
+--------------------
+Date: 8/12/2022
+Time: 19:2
+Phone Number: 55_65992328558
+
+Message: Ola, Estamos indisponiveisyfcjhfchgvjgvjg
+--------------------
+Date: 8/12/2022
+Time: 19:7
+Phone Number: 55_65999532826
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 19:7
+Phone Number: 55_65992328558
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 19:12
+Phone Number: 55_65999532826
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 19:13
+Phone Number: 55_65992328558
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 19:46
+Phone Number: 55_65999532826
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 19:46
+Phone Number: 55_65992328558
+
+Message: Ola, No momento nao estamos atendendo
+--------------------
+Date: 8/12/2022
+Time: 19:48
+Phone Number: 55_65999532826
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
+Date: 8/12/2022
+Time: 19:49
+Phone Number: 55_65992328558
+
+Message: Ola, Tudo-Bem? Sera um prazer atende-lo
+--------------------
