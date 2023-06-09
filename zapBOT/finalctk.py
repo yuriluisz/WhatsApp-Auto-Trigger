@@ -1,30 +1,42 @@
 import customtkinter
-
+import tkinter
 
 class App(customtkinter.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("minimal example app")
-        self.minsize(100, 120)
+        self.title("WhatsApp auto messager")
+        self.geometry("800x600")
+        self.grid_columnconfigure(0, weight=1)
+        self.grid_rowconfigure(0, weight=1)
 
-        self.label = customtkinter.CTkLabel(master=self, text="A mensagem aparecera aqui!")
-        self.label.pack(padx=10, pady=10)
+        self.btnframe = customtkinter.CTkFrame(self)
+        self.btnframe.grid(row=0, column=0, padx=5, pady=(5, 0), sticky="nsw")
 
-        self.cudoce = customtkinter.CTkEntry(master=self, width=120, height=3)
-        self.cudoce.pack(padx=10, pady=10,)
+        self.numero = customtkinter.CTkEntry(self)
+        self.numero.grid(row=1, column=1, padx=150, pady=10, sticky="nswe")
+        
+        self.labeltit1 = customtkinter.CTkLabel(self.btnframe, text="Opções", font=(format, 25))
+        self.labeltit1.grid(row=0, column=0, padx=5, pady=0, sticky="n")
+        
+        self.button1 = customtkinter.CTkButton(self.btnframe, text="seu pai de cueca", command=self.seupaidecueca)
+        self.button1.grid(row=1, column=0, padx=5, pady=5, sticky="w")
+        
+        self.button2 = customtkinter.CTkButton(self.btnframe, text="seu pai de cueca", command=self.seupaidecueca)
+        self.button2.grid(row=2, column=0, padx=5, pady=5, sticky="w")
+        
+        self.titulogamer = customtkinter.CTkLabel(self, text="WhatsApp auto messager", font=(format, 30))
+        self.titulogamer.grid(row=0, column=1, padx=150, pady=5, sticky="nw")
 
-        self.button = customtkinter.CTkButton(master=self, command=self.button_callback)
-        self.button.pack(padx=10, pady=10)
+        self.button = customtkinter.CTkButton(self, text="my button", command=self.button_callback)
+        self.button.grid(row=3, column=0, padx=10, pady=10, sticky="ew", columnspan=2)
+        
 
-
+    def seupaidecueca(self):
+        print("seu pai de cuequinhakkkk")
 
     def button_callback(self):
-        msg = self.cudoce.get()
-        self.label.configure(text=msg)
-
-
-
-if __name__ == "__main__":
-    app = App()
-    app.mainloop()
+        print("botaofoda")
+        
+app = App()
+app.mainloop()
