@@ -19,10 +19,10 @@ class App(customtkinter.CTk):
         self.labeltit1 = customtkinter.CTkLabel(self.btnframe, text="Opções", font=(format, 25))
         self.labeltit1.grid(row=0, column=0, padx=5, pady=0, sticky="n")
         
-        self.button1 = customtkinter.CTkButton(self.btnframe, text="seu pai de cueca", command=self.seupaidecueca)
+        self.button1 = customtkinter.CTkButton(self.btnframe, text="Manda um oi pra mim", command=self.mandaumoi)
         self.button1.grid(row=1, column=0, padx=5, pady=5, sticky="w")
         
-        self.button2 = customtkinter.CTkButton(self.btnframe, text="seu pai de cueca", command=self.seupaidecueca)
+        self.button2 = customtkinter.CTkButton(self.btnframe, text="ele vai te mandar", command=self.mandaumoi)
         self.button2.grid(row=2, column=0, padx=5, pady=5, sticky="w")
         
         self.titulogamer = customtkinter.CTkLabel(self, text="WhatsApp auto messager", font=(format, 30))
@@ -32,11 +32,11 @@ class App(customtkinter.CTk):
         self.button.grid(row=3, column=0, padx=10, pady=10, sticky="ew", columnspan=2)
         
 
-    def seupaidecueca(self):
-        print("seu pai de cuequinhakkkk")
+    def mandaumoi(self):
+        print("Ola")
 
     def button_callback(self):
-        print("botaofoda")
+        print("botao muito legal")
         
 app = App()
 app.mainloop()

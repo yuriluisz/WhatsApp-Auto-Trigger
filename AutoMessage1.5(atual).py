@@ -1,11 +1,17 @@
+"""
+Este projeto foi feito com o intuito de automatizar o disparo de mensagens em massa no WhatsApp.
+Está versão não representa sua versão final, tudo ainda está em teste e pode ser melhorado futuramente!
+--------------------- WhatsApp Auto Trigger by: https://github.com/yuriluisz --------------------------
+"""
+
+# Importar bibliotecas necessarias para o funcionamento do codigo
 from tkinter import *
 from tkinter import filedialog, ttk
 from tkinter.messagebox import showinfo
-
 import pywhatkit as pk
 
 # Abrir o arquivos de mensagens
-msgtxt = open("zapBOT/mensagens.txt")
+msgtxt = open("mensagens.txt")
 leituramsg = msgtxt.readlines()
 
 # Def do botao de enviar mensagem selecionada
@@ -34,7 +40,7 @@ def EnviarMSG():
 def fndimg():
     try:       
         imge = filedialog.askopenfilename(initialdir="/", title="Selecione UMA imagem", filetypes=((".JPG","*.jpg*"),(".PNG","*.png*"),("Todos","*.*")))
-        msgs = open("zapBOT/numeros.txt")
+        msgs = open("numeros.txt")
         numeros = msgs.readlines()
         msgzz = inputmsg.get("1.0", END)
         print(numeros)
@@ -54,7 +60,7 @@ def hwtuse():
 # Def para adicionar mensagens a lista
 def adcmensg():
     try:
-        msgstxt = open("zapBOT/mensagens.txt", "a")
+        msgstxt = open("mensagens.txt", "a")
         mensagensfodas = inputmsg.get("1.0", END)
         msgstxt.write(mensagensfodas)
         msgtxt.close()
@@ -65,7 +71,7 @@ def adcmensg():
 # Def para excluir mensagens da lista
 def excmsg():
     try:
-        msgstxt = open("zapBOT/mensagens.txt", "w")
+        msgstxt = open("mensagens.txt", "w")
         msgstxt.write("")
         msgstxt.close()
         status.config(text="Status: Todas as mensagens da lista foram excluidas!")
@@ -75,7 +81,7 @@ def excmsg():
 # Def para adicionar numero a lista
 def adcnumero():
     try:
-        numtxt = open("zapBOT/numeros.txt", "a")
+        numtxt = open("numeros.txt", "a")
         lernumin = inputnum.get("1.0", END)
         numtxt.write(lernumin)
         numtxt.close()
@@ -86,7 +92,7 @@ def adcnumero():
 # Def para excluir numero da lista
 def excnumero():
     try:
-        numtxt = open("zapBOT/numeros.txt", "w")
+        numtxt = open("numeros.txt", "w")
         numtxt.write("")
         numtxt.close()
         status.config(text="Status: Todos os numeros da lista foram excluidos!")
@@ -96,7 +102,7 @@ def excnumero():
 # Def para enviar mensagem escrita para lista
 def envflwrite():
     try:
-        numtxt = open("zapBOT/numeros.txt")
+        numtxt = open("numeros.txt")
         leituranum = numtxt.readlines()
         msgzz = inputmsg.get("1.0", END)
         for env in leituranum:
@@ -109,7 +115,7 @@ def envflwrite():
 # Def para enviar mensagem selecionada para lista
 def envflist():
     try:
-        numtxt = open("zapBOT/numeros.txt")
+        numtxt = open("numeros.txt")
         leituranum = numtxt.readlines()
         brabo = int(listbox.curselection()[0])
         msgzz = listbox.get(brabo)
