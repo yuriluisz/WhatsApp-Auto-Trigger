@@ -1,5 +1,3 @@
-Claro! Aqui está o README com alguns emojis adicionados:
-
 # WhatsApp Auto Trigger 🚀
 
 O WhatsApp Auto Trigger é um programa desenvolvido para automatizar o envio de mensagens para uma lista de números no WhatsApp. Ele permite enviar mensagens prontas, imagens e até mesmo várias mensagens em sequência, tornando o processo de comunicação mais eficiente.
